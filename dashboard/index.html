@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Breakout Radar — pre-token protocols ranked by momentum breakout</title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<a class="skip" href="#board">Skip to the board</a>
+<header class="top">
+  <div class="brand">
+    <span class="mark" aria-hidden="true">&#9650;</span>
+    <div>
+      <h1>Breakout Radar</h1>
+      <p class="sub">Pre-token protocols, ranked by momentum breakout — not by bulk.</p>
+    </div>
+  </div>
+  <div class="stats" id="stats" aria-live="polite"></div>
+</header>
+<section class="ticker" id="ticker" aria-label="Hottest breakouts"></section>
+<main id="board" tabindex="-1" aria-busy="true">
+  <section class="controls" id="controls" aria-label="Board controls"></section>
+  <section class="tablewrap" aria-label="Ranked board">
+    <table id="table">
+      <thead id="thead"></thead>
+      <tbody id="tbody"></tbody>
+    </table>
+    <p class="count" id="count"></p>
+  </section>
+  <section class="live" id="live" aria-label="Already trading"></section>
+  <section class="model" id="model" aria-label="How the model works"></section>
+</main>
+<aside class="detail" id="detail" hidden aria-label="Protocol detail"></aside>
+<script src="../data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
